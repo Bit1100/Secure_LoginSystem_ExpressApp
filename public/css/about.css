@@ -1,0 +1,30 @@
+.about-main{
+    margin:6rem;
+}
+.about-img{
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+  padding: 1rem;
+}
+.about-img1{
+    float: left;
+    margin-right: 15px;
+}
+.about-img2{
+    float:right;
+    margin-left: 15px;
+}
+.para{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin:4rem 1rem;
+}
+.para::first-letter{
+    font-size:4rem;
+    padding-left:6rem;
+    color:brown;
+}
+.heading{
+    margin-bottom:4rem;
+}

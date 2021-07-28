@@ -1,0 +1,38 @@
+<!DOCTYPE hbs>
+<hbs lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First hbs Page to get render via NodeJs</title>
+        <link rel="stylesheet" href="static/css/home.css" />
+        <link rel="stylesheet" href="static/css/media.css" />
+        <script src="static/js/app.js" type="module"></script>
+        <script src="static/js/data.js" type="module"></script>
+    </head>
+
+    <body>
+        {{>navbar}}
+        <main>
+            {{>banner}}
+            <section id="services">
+                <h2 class="heading">Our Services</h2>
+                <div class="service-cards">
+                    {{#each cards as |card|}}
+                    <div class="card">
+                        <div class="content">
+                            <h1>{{card.head1}}</h1>
+                            <h2>{{card.head2}}</h2>
+                            <p class="para">{{card.para}}
+                            </p>
+                            <a href="#">{{card.link}}</a>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </section>
+        </main>
+        {{>footer}}
+    </body>
+
+</hbs>

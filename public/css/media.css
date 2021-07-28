@@ -1,0 +1,84 @@
+@media only screen and (max-width:1024px){
+    #home{
+    padding:4rem;
+    grid-template-rows: 250px 150px;
+    min-height: 80vh;
+    }
+    #home .para{
+        font-size:4rem;
+    }
+    #home .para::first-letter{
+        font-size:4rem;
+    }
+    #home .img{
+        width:350px;
+        height:350px;
+    }
+    .about-main{
+        margin:2rem;
+    }
+    #home .about-btn{
+        font-size:1.6rem;
+        align-self: start;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    #services .heading{
+        font-size:3rem;
+    }
+}
+
+@media only screen and (max-width:768px){
+    #home{
+        padding:3rem;
+        grid-template-rows: 220px 120px;
+        min-height: 70vh;
+        }
+    #home .para{
+        font-size:3rem;
+    }
+    #home .para::first-letter{
+        font-size:3rem;
+    }
+    #home .img{
+        width:250px;
+        height:250px;
+    }
+    .about-main{
+        margin:1rem;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    #services .heading{
+        font-size:2rem;
+    }
+}
+
+@media only screen and (max-width:500px){
+    #home{
+        padding:1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 100px;
+        min-height: 60vh;
+        }
+    #home .para{
+        font-size:3rem;
+    }
+    #home .para::first-letter{
+        font-size:3rem;
+    }
+    #home .img{
+        display: none;
+    }
+    .about-main{
+        margin:1rem;
+    }
+    .heading{
+        font-size: 1rem;
+    }
+    #services .heading{
+        font-size:1.5rem;
+    }
+}

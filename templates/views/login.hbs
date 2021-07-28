@@ -1,0 +1,30 @@
+<!DOCTYPE hbs>
+<hbs lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Page via NodeJs</title>
+        <link rel="stylesheet" href="static/css/home.css">
+        <link rel="stylesheet" href="static/css/register.css">
+        <link rel="stylesheet" href="static/css/login.css">
+        <link rel="stylesheet" href="static/css/media.css" />
+    </head>
+
+    <body>
+        {{>navbar}}
+        <main>
+            {{>banner}}
+            <h1 class="heading">Login With Us</h1>
+            <section id="login" class="login-container">
+                <form action="/login" method="POST" id="login-form" class="login-form form">
+                    <input type="email" class="fields" name="email" placeholder="Enter your Email">
+                    <input type="password" class="fields" name="password" placeholder="Enter your Password">
+                    <input type="submit" class="fields submit-btn" name="sumbit-btn" value="Login">
+                </form>
+            </section>
+        </main>
+        {{>footer}}
+    </body>
+
+</hbs>

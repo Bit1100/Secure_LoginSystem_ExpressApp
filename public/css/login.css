@@ -1,0 +1,17 @@
+.login-container{
+    display: grid;
+    place-items: center;
+    width:100%;
+}
+
+.login-form{
+    width:50%;
+    background-color:skyblue;
+    padding:2rem 0rem;
+    margin:2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:black;
+}
